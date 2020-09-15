@@ -27,7 +27,7 @@ Nacos 的关键特性包括:
 #### 一、启动nacos服务（单机模式&内嵌数据库）
 
 下载源码或者安装包
-安装包地址：https://github.com/alibaba/nacos/releases
+安装包地址：https://github.com/alibaba/nacos/releases (resources目录下已提供最新nacos-server-1.3.2.tar.gz文件)
 解压后进入nacos/bin目录
 输入命令启动服务
 
@@ -345,7 +345,7 @@ pid=$(cat /home/app/data/runfile/weixin-service-pid.txt)
 echo $pid
 kill -9 $pid
 #执行jar命令
-nohup /home/app/jdk8/bin/java -Duser.timezone=GMT+08 -Xms1G -Xmx1G -Xmn1g -DLOG_HOME=/home/app/data/logs/weixin-service -Dspring.profiles.active=dev -Dspring.application.name=weixin-service -Dspring.cloud.nacos.config.file-extension=properties -Dspring.cloud.nacos.discovery.server-addr=nacos.lp.com:80 -Dspring.cloud.nacos.config.server-addr=nacos.lp.com:80 -Dspring.cloud.nacos.discovery.namespace=c2287d62-3b9d-44b6-a83d-67d896e6718f -Dspring.cloud.nacos.config.namespace=c2287d62-3b9d-44b6-a83d-67d896e6718f -jar /home/app/data/tmp/weixin-service.jar &> /home/app/data/logs/weixin-service/weixin-service.log& echo $! > /home/app/data/runfile/weixin-service-pid.txt
+nohup /home/app/jdk8/bin/java -Duser.timezone=GMT+08 -Xms1G -Xmx1G -Xmn1g -DLOG_HOME=/home/app/data/logs/weixin-service -Dspring.profiles.active=dev -Dspring.application.name=weixin-service -Dspring.cloud.nacos.config.file-extension=properties -Dspring.cloud.nacos.discovery.server-addr=nacos.lpxx.com:80 -Dspring.cloud.nacos.config.server-addr=nacos.lpxx.com:80 -Dspring.cloud.nacos.discovery.namespace=c2287d62-3b9d-44b6-a83d-67d896e6718f -Dspring.cloud.nacos.config.namespace=c2287d62-3b9d-44b6-a83d-67d896e6718f -jar /home/app/data/tmp/weixin-service.jar &> /home/app/data/logs/weixin-service/weixin-service.log& echo $! > /home/app/data/runfile/weixin-service-pid.txt
 ```
 
 
