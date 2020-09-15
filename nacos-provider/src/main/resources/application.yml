@@ -1,0 +1,17 @@
+server:
+  port: 8080
+#mybatis实体类扫描路径
+mybatis:
+  type-aliases-package: com.hongyan.study.nacos.bean
+##spring相关配置(例如datasource相关配置)
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://localhost:3306/user_0?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
+#    username: root
+#    password: 123456
+#  application:
+#    name: spring-cloud-nacos
+##业务配置
+#useLocalCache: false
+
