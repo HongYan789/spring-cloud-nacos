@@ -8,7 +8,7 @@
     <packaging>pom</packaging>
     <version>1.0.2-SNAPSHOT</version>
 
-    <name>nacos</name>
+    <name>spring-cloud-nacos</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>
